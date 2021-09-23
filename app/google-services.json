@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "462785406901",
+    "firebase_url": "https://razzapp-v1-default-rtdb.firebaseio.com",
+    "project_id": "razzapp-v1",
+    "storage_bucket": "razzapp-v1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:462785406901:android:4d341f34b2a01c3326dbfc",
+        "android_client_info": {
+          "package_name": "com.example.razzappv1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "462785406901-18u7f25h80c2k1k90og4ci78s8niqap9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA78c_9Xaac8g3Iz2hvkbzWaa2RlkHGdRk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "462785406901-18u7f25h80c2k1k90og4ci78s8niqap9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:462785406901:android:6c60df1d290abfa726dbfc",
+        "android_client_info": {
+          "package_name": "com.example.razzappv2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "462785406901-18u7f25h80c2k1k90og4ci78s8niqap9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA78c_9Xaac8g3Iz2hvkbzWaa2RlkHGdRk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "462785406901-18u7f25h80c2k1k90og4ci78s8niqap9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
