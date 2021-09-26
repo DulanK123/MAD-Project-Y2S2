@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuperAdminDashboard"
+    android:orientation="vertical"
+    android:padding="18dp"
+    android:background="#f6f8fa"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dashboard"
+            android:textColor="#4B4B4B"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            />
+        <ImageView
+            android:id="@+id/popup_img"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/menu"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/stock_prof_bg"
+        >
+
+        <ImageView
+            android:id="@+id/user_photo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/user_photo"
+            android:text="User Name"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="18dp"
+
+            />
+        <TextView
+            android:id="@+id/useremail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/user_photo"
+            android:text="User Email"
+            android:layout_centerVertical="true"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/username"
+            android:textSize="15dp"
+            android:layout_marginTop="8dp"
+
+            />
+
+
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:padding="12dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:background="@drawable/dash_item_bg"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:id="@+id/el"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/device"/>
+                <TextView
+                    android:id="@+id/elc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-20dp"
+                    android:text="Electronic Count"
+                    android:textSize="13dp"
+                    android:layout_marginStart="5dp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/elecsum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="30dp"
+                    android:layout_marginStart="-80dp"
+                    android:layout_marginTop="20dp"
+                    android:text="0"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:padding="12dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/dash_item_bg"
+                >
+
+                <ImageView
+                    android:id="@+id/fc"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/grocery"/>
+                <TextView
+                    android:id="@+id/foodc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-20dp"
+                    android:text="Food Count"
+                    android:textSize="13dp"
+                    android:layout_marginStart="5dp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/foodsum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="30dp"
+                    android:layout_marginStart="-50dp"
+                    android:layout_marginTop="20dp"
+                    android:text="0"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="10dp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:padding="12dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:background="@drawable/dash_item_bg"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                <ImageView
+                    android:id="@+id/st"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/stationery"/>
+                <TextView
+                    android:id="@+id/stc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-20dp"
+                    android:text="Stationary Count"
+                    android:textSize="13dp"
+                    android:layout_marginStart="5dp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/stationsum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="30dp"
+                    android:layout_marginStart="-80dp"
+                    android:layout_marginTop="20dp"
+                    android:text="0"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:padding="12dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/dash_item_bg"
+                >
+
+                <ImageView
+                    android:id="@+id/cl"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/folding"/>
+                <TextView
+                    android:id="@+id/clc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-20dp"
+                    android:text="Cloth Count"
+                    android:textSize="13dp"
+                    android:layout_marginStart="5dp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/clothsum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="30dp"
+                    android:layout_marginStart="-60dp"
+                    android:layout_marginTop="20dp"
+                    android:text="0"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/rel3"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/superadmin_um_bg"
+            >
+
+            <ImageView
+                android:id="@+id/um"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="65dp"
+                android:src="@drawable/useraccount" />
+
+            <TextView
+                android:id="@+id/umh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/um"
+                android:text="Manage Stock Admin"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginTop="80dp"
+
+                />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/rarrow"
+                android:layout_marginRight="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:backgroundTint="@color/white"
+
+                />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel4"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/superadmin_um_bg"
+            >
+
+            <ImageView
+                android:id="@+id/ur"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="65dp"
+                android:src="@drawable/useradd" />
+
+            <TextView
+                android:id="@+id/urh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/ur"
+                android:text="Add new Stock Admin"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginTop="80dp"
+
+                />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/rarrow"
+                android:layout_marginRight="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:backgroundTint="@color/white"
+
+                />
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

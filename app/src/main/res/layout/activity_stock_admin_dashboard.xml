@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StockAdminDashboard"
+    android:orientation="vertical"
+    android:padding="18dp"
+    android:background="#f6f8fa">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dashboard"
+            android:textColor="#4B4B4B"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            />
+        <ImageView
+            android:id="@+id/popup_img"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/menu"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/stock_prof_bg"
+        >
+
+        <ImageView
+            android:id="@+id/user_photo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@+id/user_photo"
+            android:text="User Name"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            />
+        <TextView
+            android:id="@+id/useremail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/user_photo"
+            android:text="User Email"
+            android:layout_centerVertical="true"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/username"
+            android:textSize="15dp"
+            android:layout_marginTop="8dp"
+
+            />
+
+
+    </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_marginTop="20dp"
+                >
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <com.smarteist.autoimageslider.SliderView
+                        android:id="@+id/image_slider"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        app:sliderAnimationDuration="600"
+                        app:sliderAutoCycleDirection="back_and_forth"
+                        app:sliderIndicatorGravity="center_horizontal|bottom"
+                        app:sliderIndicatorMargin="20dp"
+                        app:sliderIndicatorOrientation="horizontal"
+                        app:sliderIndicatorPadding="3dp"
+                        app:sliderIndicatorRadius="2dp"
+                        app:sliderIndicatorSelectedColor="#5A5A5A"
+                        app:sliderIndicatorUnselectedColor="#FFF"
+                        app:sliderScrollTimeInSec="2"
+                        app:sliderStartAutoCycle="true" />
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Available Category"
+                android:textColor="#4B4B4B"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                />
+
+            <RelativeLayout
+                android:id="@+id/electronicbtn"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/dash_item_bg"
+                >
+                <ImageView
+                    android:id="@+id/elecpic"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/device" />
+
+                <TextView
+                    android:id="@+id/elec1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/elecpic"
+                    android:text="Electronic Items"
+                    android:textColor="#4B4B4B"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginTop="18dp"
+
+                    />
+                <TextView
+                    android:id="@+id/elec2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/elecpic"
+                    android:text="go to stock"
+                    android:layout_centerVertical="true"
+                    android:textColor="#4B4B4B"
+                    android:layout_below="@+id/elec1"
+                    android:textSize="15dp"
+                    android:layout_marginTop="8dp"
+
+                    />
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/rarrow"
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="#4B4B4B"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cothbtn"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/dash_item_bg"
+                >
+
+                <ImageView
+                    android:id="@+id/clothpic"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/folding" />
+
+                <TextView
+                    android:id="@+id/cloth1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/clothpic"
+                    android:text="Cloth Items"
+                    android:textColor="#4B4B4B"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginTop="18dp"
+
+                    />
+                <TextView
+                    android:id="@+id/cloth2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/clothpic"
+                    android:text="go to stock"
+                    android:layout_centerVertical="true"
+                    android:textColor="#4B4B4B"
+                    android:layout_below="@+id/cloth1"
+                    android:textSize="15dp"
+                    android:layout_marginTop="8dp"
+
+                    />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/rarrow"
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="#4B4B4B"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/foodbtn"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/dash_item_bg"
+                >
+
+
+
+
+                <ImageView
+                    android:id="@+id/foodpic"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/grocery" />
+
+                <TextView
+                    android:id="@+id/food2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/foodpic"
+                    android:text="Food Items"
+                    android:textColor="#4B4B4B"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginTop="18dp"
+
+                    />
+                <TextView
+                    android:id="@+id/Food"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/foodpic"
+                    android:text="go to stock"
+                    android:layout_centerVertical="true"
+                    android:textColor="#4B4B4B"
+                    android:layout_below="@+id/food2"
+                    android:textSize="15dp"
+                    android:layout_marginTop="8dp"
+
+                    />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/rarrow"
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="#4B4B4B"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/stationarybtn"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/dash_item_bg"
+                >
+
+                <ImageView
+                    android:id="@+id/statpic"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/stationery" />
+
+                <TextView
+                    android:id="@+id/stat1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/statpic"
+                    android:text="Stationary Items"
+                    android:textColor="#4B4B4B"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginTop="18dp"
+
+                    />
+                <TextView
+                    android:id="@+id/stat2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/statpic"
+                    android:text="go to stock"
+                    android:layout_centerVertical="true"
+                    android:textColor="#4B4B4B"
+                    android:layout_below="@+id/stat1"
+                    android:textSize="15dp"
+                    android:layout_marginTop="8dp"
+
+                    />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/rarrow"
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="#4B4B4B"
+
+                    />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+</ScrollView>

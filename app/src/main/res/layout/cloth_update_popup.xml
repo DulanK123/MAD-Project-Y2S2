@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bottom_popup_background"
+    >
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:background="@color/primaryblue"
+        android:layout_gravity="center"
+        android:layout_height="50dp"
+        android:text="Cloth item update"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="130dp"
+        android:textColor="@color/white"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/primaryblue"
+        app:boxStrokeColor="@color/primaryblue"
+        android:hint="Item Name"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/primaryblue"
+        app:boxStrokeColor="@color/primaryblue"
+        android:hint="Description"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtDes"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:textColorHint="@color/primaryblue"
+        app:boxStrokeColor="@color/primaryblue"
+        android:hint="Quantity">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtQty"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:maxLength="3"
+            android:inputType="number"
+            android:gravity="center_vertical" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:textColorHint="@color/primaryblue"
+        app:boxStrokeColor="@color/primaryblue"
+        android:hint="Material">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtMat"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/primaryblue"
+        app:boxStrokeColor="@color/primaryblue"
+        android:hint="Image URL"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtImageUrl"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:gravity="center_vertical" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/btnUpdate"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/login_btn_bg"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:text="Update"/>
+
+</LinearLayout>
